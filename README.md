@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    <em>A Python package to fusion LR and HR imagery</em> 🚀
+    <em>A Python package to fusion LR and HR imagery </em> 🚀
 </p>
 
 <p align="center">
