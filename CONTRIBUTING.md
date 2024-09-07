@@ -4,11 +4,11 @@ We welcome contributions from the community! Every contribution, no matter how s
 
 ## **How to contribute** 🛠️
 
-1. **Fork the repository:** Start by forking the [sathybrid](https://github.com/YOUR_GITHUB_USERNAME/sathybrid) repository to your GitHub account. 🍴
+1. **Fork the repository:** Start by forking the [sathybrid](https://github.com/IPL-UV/sathybrid) repository to your GitHub account. 🍴
 2. **Clone your fork locally:**
     ```bash
     cd <directory_in_which_repo_should_be_created>
-    git clone https://github.com/YOUR_GITHUB_USERNAME/sathybrid.git
+    git clone https://github.com/IPL-UV/sathybrid.git
     cd sathybrid
     ```
 3. **Create a branch:** Create a new branch for your feature or bug fix:
