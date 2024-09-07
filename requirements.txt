@@ -8,3 +8,4 @@ mkdocs-awesome-pages-plugin==2.9.1
 mkdocstrings
 mkdocs-same-dir
 mkdocs-autorefs==0.3.0
+jinja2==3.0.3
