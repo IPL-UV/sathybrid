@@ -43,6 +43,8 @@
     
       <link rel="stylesheet" href="assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="docs/style/style.css">
+    
     <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -414,13 +416,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#fixed_1" class="md-nav__link">
-    Fixed
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -442,14 +437,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#changed_2" class="md-nav__link">
-    Changed
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fixed_2" class="md-nav__link">
+  <a href="#fixed_1" class="md-nav__link">
     Fixed
   </a>
   
@@ -591,13 +579,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#fixed_1" class="md-nav__link">
-    Fixed
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -619,14 +600,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#changed_2" class="md-nav__link">
-    Changed
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fixed_2" class="md-nav__link">
+  <a href="#fixed_1" class="md-nav__link">
     Fixed
   </a>
   
@@ -681,59 +655,45 @@
 <h2 id="unreleased"><strong>[Unreleased]</strong></h2>
 <h3 id="added"><strong>Added</strong></h3>
 <ul>
-<li>Improvements to the image fusion algorithm for better accuracy.</li>
-<li>Added support for new interpolation methods such as <code>lanczos7</code>.</li>
-<li>Improved performance of the <code>find_similar_lr</code> function.</li>
-<li>Enhanced documentation for new functionalities.</li>
+<li>Implemented advanced fusion techniques for combining low-resolution (LR) and high-resolution (HR) satellite imagery.</li>
+<li>Added support for multi-scale fusion to preserve both spatial and spectral details.</li>
+<li>New logging functionality for tracking image processing steps.</li>
 </ul>
 <h3 id="changed"><strong>Changed</strong></h3>
 <ul>
-<li>Optimized the histogram matching process for speed.</li>
-<li>Updated README with new usage examples.</li>
-<li>Refined error handling in the <code>image_fusion</code> function.</li>
+<li>Improved performance for large-scale fusion processes.</li>
+<li>Updated user documentation with additional examples for LR-HR image fusion.</li>
 </ul>
 <h3 id="fixed"><strong>Fixed</strong></h3>
 <ul>
-<li>Resolved minor bugs related to image normalization.</li>
-<li>Fixed memory leaks in the resampling process.</li>
+<li>Resolved bug related to memory overflow during fusion of large imagery sets.</li>
+<li>Fixed minor inaccuracies in the fusion process.</li>
 </ul>
 <h2 id="020-2024-08-27"><strong>[0.2.0] - 2024-08-27</strong></h2>
 <h3 id="added_1"><strong>Added</strong></h3>
 <ul>
-<li>Support for image denoising using SwinIR model.</li>
-<li>Fourier-based fusion with multiple filter options: ideal, Butterworth, Gaussian.</li>
-<li>New utility functions for image kernel application.</li>
-<li>Official support for Python 3.10, 3.11, and 3.12.</li>
+<li>New functionality for fusion of LR and HR satellite images.</li>
+<li>Support for Python 3.12.</li>
+<li>New user guide with detailed examples for fusion methods.</li>
 </ul>
 <h3 id="changed_1"><strong>Changed</strong></h3>
 <ul>
-<li>Improved accuracy of Fourier image fusion for better high-resolution outputs.</li>
-<li>Tweaked color correction algorithms for more precise results in the image fusion process.</li>
-</ul>
-<h3 id="fixed_1"><strong>Fixed</strong></h3>
-<ul>
-<li>Corrected an issue with low-frequency filtering during image fusion.</li>
+<li>Improved algorithm for faster fusion and reduced computational load.</li>
 </ul>
 <h2 id="011-2024-08-26"><strong>[0.1.1] - 2024-08-26</strong></h2>
 <h3 id="added_2"><strong>Added</strong></h3>
 <ul>
-<li>Support for multi-threaded image processing.</li>
-<li>Basic histogram matching between low-resolution and high-resolution images.</li>
+<li>Added new methods to improve the handling of noisy satellite imagery during the fusion process.</li>
 </ul>
-<h3 id="changed_2"><strong>Changed</strong></h3>
+<h3 id="fixed_1"><strong>Fixed</strong></h3>
 <ul>
-<li>Optimized resampling functions for faster processing.</li>
-</ul>
-<h3 id="fixed_2"><strong>Fixed</strong></h3>
-<ul>
-<li>Resolved bug causing incorrect alignment in high-resolution images.</li>
+<li>Bug fix: Addressed an issue where certain imagery would cause memory leaks during processing.</li>
 </ul>
 <h2 id="010-2024-08-10"><strong>[0.1.0] - 2024-08-10</strong></h2>
 <h3 id="added_3"><strong>Added</strong></h3>
 <ul>
-<li>Initial release of <code>sathybrid</code> with core functionalities for fusing low-resolution and high-resolution satellite imagery.</li>
-<li>Basic image fusion capabilities using interpolation techniques such as Lanczos and cubic.</li>
-<li>Support for resampling methods and data normalization.</li>
+<li>Initial release of <code>sathybrid</code> for fusing low-resolution and high-resolution satellite imagery.</li>
+<li>Basic fusion functionalities and initial documentation.</li>
 </ul>
 
               
@@ -809,6 +769,8 @@
     
     
       <script src="assets/javascripts/bundle.3a4b43e5.min.js"></script>
+      
+        <script src="docs/js/copybutton.js"></script>
       
     
   </body>

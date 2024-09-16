@@ -43,6 +43,8 @@
     
       <link rel="stylesheet" href="assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="docs/style/style.css">
+    
     <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -410,10 +412,10 @@
         
           <li class="md-nav__item">
   <a href="#basic-fusion-of-hr-and-lr-imagery" class="md-nav__link">
-    Basic Fusion of HR and LR Imagery 🛰️
+    Basic fusion of HR and LR imagery 🛰️
   </a>
   
-    <nav class="md-nav" aria-label="Basic Fusion of HR and LR Imagery 🛰️">
+    <nav class="md-nav" aria-label="Basic fusion of HR and LR imagery 🛰️">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -478,10 +480,10 @@
         
           <li class="md-nav__item">
   <a href="#applying-custom-kernels" class="md-nav__link">
-    Applying Custom Kernels🎛️
+    Applying custom kernels🎛️
   </a>
   
-    <nav class="md-nav" aria-label="Applying Custom Kernels🎛️">
+    <nav class="md-nav" aria-label="Applying custom kernels🎛️">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -517,18 +519,18 @@
       
         <li class="md-nav__item">
   <a href="#advanced-usage" class="md-nav__link">
-    Advanced Usage ⚙️
+    Advanced usage ⚙️
   </a>
   
-    <nav class="md-nav" aria-label="Advanced Usage ⚙️">
+    <nav class="md-nav" aria-label="Advanced usage ⚙️">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#image-denoising-with-swinir" class="md-nav__link">
-    Image Denoising with SwinIR 🧹
+    Image denoising with SwinIR 🧹
   </a>
   
-    <nav class="md-nav" aria-label="Image Denoising with SwinIR 🧹">
+    <nav class="md-nav" aria-label="Image denoising with SwinIR 🧹">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -566,10 +568,10 @@
         
           <li class="md-nav__item">
   <a href="#image-fusion-with-fourier-transform" class="md-nav__link">
-    Image Fusion with Fourier Transform 🧮
+    Image Fusion with fourier transform 🧮
   </a>
   
-    <nav class="md-nav" aria-label="Image Fusion with Fourier Transform 🧮">
+    <nav class="md-nav" aria-label="Image Fusion with fourier transform 🧮">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -588,7 +590,7 @@
         
           <li class="md-nav__item">
   <a href="#perform-fusion-with-fourier-filtering" class="md-nav__link">
-    Perform fusion with Fourier filtering
+    Perform fusion with fourier filtering
   </a>
   
 </li>
@@ -630,7 +632,7 @@
 
 <h1 id="_1"></h1>
 <p align="center">
-  <img src="https://huggingface.co/datasets/JulioContrerasH/DataMLSTAC/resolve/main/banner_sathybrid.png" width="100%">
+  <img src="https://huggingface.co/datasets/JulioContrerasH/DataMLSTAC/resolve/main/banner_sathybrid.png" width="40%">
 </p>
 
 <p align="center">
@@ -671,7 +673,7 @@
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>sathybrid
 </code></pre></div>
 <h2 id="how-to-use"><strong>How to use</strong> 🛠️</h2>
-<h3 id="basic-fusion-of-hr-and-lr-imagery"><strong>Basic Fusion of HR and LR Imagery</strong> 🛰️</h3>
+<h3 id="basic-fusion-of-hr-and-lr-imagery"><strong>Basic fusion of HR and LR imagery</strong> 🛰️</h3>
 <h4 id="load-libraries"><strong>Load libraries</strong></h4>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sathybrid</span>
 <span class="kn">import</span> <span class="nn">pathlib</span>
@@ -716,7 +718,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">best_lr_image</span> <span class="o">=</span> <span class="n">data_stats</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;lr_img&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Most similar LR image: </span><span class="si">{</span><span class="n">best_lr_image</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="applying-custom-kernels"><strong>Applying Custom Kernels</strong>🎛️</h3>
+<h3 id="applying-custom-kernels"><strong>Applying custom kernels</strong>🎛️</h3>
 <h4 id="load-libraries_2"><strong>Load libraries</strong></h4>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sathybrid.blur</span> <span class="kn">import</span> <span class="n">apply_kernel_to_image</span>
 <span class="kn">import</span> <span class="nn">torch</span>
@@ -727,8 +729,8 @@
 <h4 id="apply-a-triangle-kernel"><strong>Apply a triangle kernel</strong></h4>
 <div class="highlight"><pre><span></span><code><span class="n">smoothed_image</span> <span class="o">=</span> <span class="n">apply_kernel_to_image</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;triangle&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="advanced-usage"><strong>Advanced Usage</strong> ⚙️</h2>
-<h3 id="image-denoising-with-swinir"><strong>Image Denoising with SwinIR</strong> 🧹</h3>
+<h2 id="advanced-usage"><strong>Advanced usage</strong> ⚙️</h2>
+<h3 id="image-denoising-with-swinir"><strong>Image denoising with SwinIR</strong> 🧹</h3>
 <h4 id="load-libraries_3"><strong>Load libraries</strong></h4>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sathybrid.main</span> <span class="kn">import</span> <span class="n">setup_denoiser</span><span class="p">,</span> <span class="n">image_denoise</span>
 </code></pre></div>
@@ -741,7 +743,7 @@
 <h4 id="denoise-the-image"><strong>Denoise the image</strong></h4>
 <div class="highlight"><pre><span></span><code><span class="n">denoised_image</span> <span class="o">=</span> <span class="n">image_denoise</span><span class="p">(</span><span class="n">image_tensor</span><span class="p">,</span> <span class="n">denoiser</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="image-fusion-with-fourier-transform"><strong>Image Fusion with Fourier Transform</strong> 🧮</h3>
+<h3 id="image-fusion-with-fourier-transform"><strong>Image Fusion with fourier transform</strong> 🧮</h3>
 <h4 id="load-libraries_4"><strong>Load libraries</strong></h4>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sathybrid.main</span> <span class="kn">import</span> <span class="n">image_fusion</span>
 </code></pre></div>
@@ -750,7 +752,7 @@
 <span class="n">LRfile</span> <span class="o">=</span> <span class="s2">&quot;/path/to/lr_image.tif&quot;</span>
 <span class="n">OUTfile</span> <span class="o">=</span> <span class="s2">&quot;/path/to/output/fusion.tif&quot;</span>
 </code></pre></div>
-<h4 id="perform-fusion-with-fourier-filtering"><strong>Perform fusion with Fourier filtering</strong></h4>
+<h4 id="perform-fusion-with-fourier-filtering"><strong>Perform fusion with fourier filtering</strong></h4>
 <div class="highlight"><pre><span></span><code><span class="n">hybrid_image</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">image_fusion</span><span class="p">(</span>
     <span class="n">hr_file</span><span class="o">=</span><span class="n">HRfile</span><span class="p">,</span>
     <span class="n">lr_file</span><span class="o">=</span><span class="n">LRfile</span><span class="p">,</span>
@@ -829,6 +831,8 @@
     
     
       <script src="assets/javascripts/bundle.3a4b43e5.min.js"></script>
+      
+        <script src="docs/js/copybutton.js"></script>
       
     
   </body>
