@@ -7,51 +7,38 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## **[Unreleased]**
 
 ### **Added**
-- Improvements to the image fusion algorithm for better accuracy.
-- Added support for new interpolation methods such as `lanczos7`.
-- Improved performance of the `find_similar_lr` function.
-- Enhanced documentation for new functionalities.
+- Implemented advanced fusion techniques for combining low-resolution (LR) and high-resolution (HR) satellite imagery.
+- Added support for multi-scale fusion to preserve both spatial and spectral details.
+- New logging functionality for tracking image processing steps.
 
 ### **Changed**
-- Optimized the histogram matching process for speed.
-- Updated README with new usage examples.
-- Refined error handling in the `image_fusion` function.
+- Improved performance for large-scale fusion processes.
+- Updated user documentation with additional examples for LR-HR image fusion.
 
 ### **Fixed**
-- Resolved minor bugs related to image normalization.
-- Fixed memory leaks in the resampling process.
+- Resolved bug related to memory overflow during fusion of large imagery sets.
+- Fixed minor inaccuracies in the fusion process.
 
 ## **[0.2.0] - 2024-08-27**
 
 ### **Added**
-- Support for image denoising using SwinIR model.
-- Fourier-based fusion with multiple filter options: ideal, Butterworth, Gaussian.
-- New utility functions for image kernel application.
-- Official support for Python 3.10, 3.11, and 3.12.
+- New functionality for fusion of LR and HR satellite images.
+- Support for Python 3.12.
+- New user guide with detailed examples for fusion methods.
 
 ### **Changed**
-- Improved accuracy of Fourier image fusion for better high-resolution outputs.
-- Tweaked color correction algorithms for more precise results in the image fusion process.
-
-### **Fixed**
-- Corrected an issue with low-frequency filtering during image fusion.
+- Improved algorithm for faster fusion and reduced computational load.
 
 ## **[0.1.1] - 2024-08-26**
 
 ### **Added**
-- Support for multi-threaded image processing.
-- Basic histogram matching between low-resolution and high-resolution images.
-  
-### **Changed**
-- Optimized resampling functions for faster processing.
+- Added new methods to improve the handling of noisy satellite imagery during the fusion process.
 
 ### **Fixed**
-- Resolved bug causing incorrect alignment in high-resolution images.
+- Bug fix: Addressed an issue where certain imagery would cause memory leaks during processing.
 
 ## **[0.1.0] - 2024-08-10**
 
 ### **Added**
-- Initial release of `sathybrid` with core functionalities for fusing low-resolution and high-resolution satellite imagery.
-- Basic image fusion capabilities using interpolation techniques such as Lanczos and cubic.
-- Support for resampling methods and data normalization.
-
+- Initial release of `sathybrid` for fusing low-resolution and high-resolution satellite imagery.
+- Basic fusion functionalities and initial documentation.

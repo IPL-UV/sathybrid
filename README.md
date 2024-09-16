@@ -1,7 +1,7 @@
 # 
 
 <p align="center">
-  <img src="https://huggingface.co/datasets/JulioContrerasH/DataMLSTAC/resolve/main/banner_sathybrid.png" width="100%">
+  <img src="https://huggingface.co/datasets/JulioContrerasH/DataMLSTAC/resolve/main/banner_sathybrid.png" width="40%">
 </p>
 
 <p align="center">
@@ -47,12 +47,11 @@ Install the latest version from PyPI:
 
 ```bash
 pip install sathybrid
-
 ```
 
 ## **How to use** 🛠️
 
-### **Basic Fusion of HR and LR Imagery** 🛰️
+### **Basic fusion of HR and LR imagery** 🛰️
 
 #### **Load libraries**
 
@@ -114,7 +113,7 @@ print(f"Most similar LR image: {best_lr_image}")
 ```
 
 
-### **Applying Custom Kernels**🎛️
+### **Applying custom kernels**🎛️
 
 #### **Load libraries**
 
@@ -133,9 +132,9 @@ image = torch.randn(1, 3, 256, 256).cuda()
 ```python
 smoothed_image = apply_kernel_to_image(image, kernel_size=5, method="triangle")
 ```
-## **Advanced Usage** ⚙️
+## **Advanced usage** ⚙️
 
-### **Image Denoising with SwinIR** 🧹
+### **Image denoising with SwinIR** 🧹
 
 #### **Load libraries**
 
@@ -161,7 +160,7 @@ denoised_image = image_denoise(image_tensor, denoiser)
 ```
 
 
-### **Image Fusion with Fourier Transform** 🧮
+### **Image Fusion with fourier transform** 🧮
 
 #### **Load libraries**
 
@@ -176,7 +175,7 @@ LRfile = "/path/to/lr_image.tif"
 OUTfile = "/path/to/output/fusion.tif"
 ```
 
-#### **Perform fusion with Fourier filtering**
+#### **Perform fusion with fourier filtering**
 
 ```python
 hybrid_image, error = image_fusion(
